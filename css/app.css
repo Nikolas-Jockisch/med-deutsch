@@ -426,3 +426,27 @@ html.rm .shake{animation:none!important}html.rm .spot.on .pulse{animation:none!i
 .mode.small{min-height:112px;padding:22px}
 .mode.small b{font-size:var(--fs-head)}
 @media (max-width:599px){.minia-row{grid-template-columns:1fr}.dl{max-width:94%}}
+
+/* ---------- M4 · instructions: sich, correct form, exam steps ---------- */
+.qde i.rf{font-style:normal;text-decoration:underline dotted;text-decoration-color:var(--ink-3);text-decoration-thickness:1.5px;text-underline-offset:.22em}
+.ex.inf{margin-top:18px}
+.ex.inf .en{font-size:var(--fs-cap);color:var(--ink-3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px}
+.opts.sents .opt{font-size:var(--fs-body);line-height:1.3;overflow-wrap:normal;hyphens:manual}
+.stage-wrap.wide.seqmode{max-width:var(--cardw)}
+.stage-wrap.wide.seqmode .stage{display:flex;flex-direction:column;width:100%}
+.seq-stage .side{width:100%}
+.seq{list-style:none;margin:18px 0 14px;padding:10px;display:flex;flex-direction:column;gap:8px;border-radius:var(--r-ctl);box-shadow:inset 0 0 0 1.5px var(--hairline);transition:background-color .2s,box-shadow .2s}
+.seq.ok{background:var(--ok-tint);box-shadow:inset 0 0 0 1.5px var(--ok)}
+.seq.bad{background:var(--err-tint);box-shadow:inset 0 0 0 1.5px var(--err)}
+.seq li{display:block}
+.seq .slot{width:100%;min-height:52px;display:flex;align-items:center;gap:12px;padding:8px 14px;border-radius:10px;background:var(--surface);text-align:left;font-size:var(--fs-body);line-height:1.3}
+html[data-theme="dark"] .seq .slot{background:var(--surface-2)}
+.seq .slot.empty{background:transparent;box-shadow:inset 0 0 0 1.5px var(--hairline)}
+.seq .slot.fixed.right{box-shadow:inset 0 0 0 1.5px var(--ok)}
+.seq .sn{flex:none;width:26px;height:26px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:var(--fs-cap);font-weight:600;color:var(--ink-3);box-shadow:inset 0 0 0 1.5px var(--hairline);font-variant-numeric:tabular-nums}
+.seq .st{min-width:0;overflow-wrap:normal}
+.seq-bank{display:flex;flex-direction:column;gap:10px}
+.seq-bank .opt{font-size:var(--fs-body);min-height:56px}
+.seq-bank .opt.ghost{visibility:hidden}
+.seq-en{margin:8px 0 0;padding-left:1.4em;color:var(--ink-3);font-size:var(--fs-call)}
+.seq-en li+li{margin-top:2px}
