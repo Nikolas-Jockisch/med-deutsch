@@ -450,3 +450,25 @@ html[data-theme="dark"] .seq .slot{background:var(--surface-2)}
 .seq-bank .opt.ghost{visibility:hidden}
 .seq-en{margin:8px 0 0;padding-left:1.4em;color:var(--ink-3);font-size:var(--fs-call)}
 .seq-en li+li{margin-top:2px}
+/* M5 · compound builder */
+.cp-sum{margin-top:10px;font-size:var(--fs-head);line-height:1.5}
+.cp-sum .art.der{color:var(--a-der)}.cp-sum .art.das{color:var(--a-das)}.cp-sum .art.die{color:var(--a-die)}
+.cp-plus{color:var(--ink-3,#8E8E93);padding:0 2px}
+.cp-arts{display:flex;gap:8px;margin-bottom:10px}
+.cp-arts .wt{display:inline-flex;align-items:center;gap:8px;padding:0 16px}
+.cp-arts .wt.on{background:var(--accent-tint);color:var(--accent);box-shadow:inset 0 0 0 1.5px var(--accent)}
+.cp-line{gap:0;align-items:center}
+.cp-line .cp-a{font-size:var(--fs-head);font-weight:600;margin-right:10px;padding-left:6px}
+.cp-line .cp-a.der{color:var(--a-der)}.cp-line .cp-a.das{color:var(--a-das)}.cp-line .cp-a.die{color:var(--a-die)}
+.cp-line .cp-piece{padding:0 10px;border-radius:0}
+.cp-line .cp-piece:first-of-type{border-radius:999px 0 0 999px;padding-left:16px}
+.cp-line .cp-piece:last-child{border-radius:0 999px 999px 0;padding-right:16px}
+.cp-line .cp-piece:only-of-type{border-radius:999px;padding:0 16px}
+.cp-line .cp-piece.joined{box-shadow:inset 1px 0 0 var(--hairline)}
+.cpw{color:var(--ink-1)}
+.fb-de .fuge,.cpw .fuge{color:var(--accent);text-decoration:underline;text-underline-offset:3px;font-weight:600}
+.map .dim{fill:#F4F0E8;fill-opacity:.65;stroke:none}
+html.rm .map .dim{animation:none}
+/* M5: long compounds (Bauchspeicheldrüse) — on narrow phones the English goes under the German instead of a third column */
+@media (max-width:599px){.wl a{grid-template-columns:2.2em minmax(0,1fr);row-gap:2px}.wl .i{grid-column:1;grid-row:1}.wl .de{grid-column:2;grid-row:1}.wl .e{grid-column:2;grid-row:2}}
+.cp-sum .cp-pt{white-space:nowrap}   /* article stays with its noun when the sum wraps */
